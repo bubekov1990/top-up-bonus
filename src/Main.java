@@ -4,22 +4,27 @@ public class Main {
         // Объявляете переменные для входных данных и
         // параметров программы: начального счёта,
         // суммы пополнения и тп
-        int check = 100;
-        int replenishment = 200;
-        int payment = check + replenishment / 100;
-        boolean a = check + replenishment > 1100;
+
+        int balance = 1000;
+        int replenishment = 300;
+        int sum = balance + replenishment;
+        int bonus = sum / 100;
+        boolean replenishes = true;
+        int percent = replenishes ? bonus : sum;
 
         // Условным оператором проверяете превысила ли
         // сумма пополнения порог и для этих двух разных
         // сценариев рассчитываете сумму бонуса и выводите
         // на экран.
-        int replenished;
-        if (a) {
-            replenished = check + replenishment + payment;
+        int check = percent + sum;
+        int min = 1000;
+        if (sum > min) {
+
         } else {
-            replenished = check + replenishment;
+            check = sum;
         }
-        System.out.println(a);
+
+        System.out.println(check);
 
     }
 }
