@@ -6,7 +6,9 @@ public class Main {
         // суммы пополнения и тп
 
         int balance = 100;
-        int replenishment = 1100;
+        int replenishment = 500;
+        int min = 1000;
+        boolean replenishes = true;
 
         // Условным оператором проверяете превысила ли
         // сумма пополнения порог и для этих двух разных
@@ -15,10 +17,8 @@ public class Main {
 
         int sum = balance + replenishment;
         int bonus = replenishment / 100;
-        boolean replenishes = true;
         int percent = replenishes ? bonus : sum;
         int check = percent + sum;
-        int min = 1000;
         if (sum > min) {
 
         } else {
